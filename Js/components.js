@@ -119,4 +119,27 @@ document.addEventListener("DOMContentLoaded", function() {
     if (headerElement) headerElement.innerHTML = headerHTML;
     if (footerElement) footerElement.innerHTML = footerHTML;
     document.body.insertAdjacentHTML('beforeend', mascotaHTML);
+
 });
+
+// === FIX DEFINITIVO SUBMENU (GITHUB + LOCAL) ===
+const style = document.createElement("style");
+style.innerHTML = `
+#main-nav,
+.nav-wrapper,
+nav,
+.dropdown {
+    overflow: visible !important;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 999999 !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block !important;
+}
+`;
+document.head.appendChild(style);
