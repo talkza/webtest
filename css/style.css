@@ -115,3 +115,18 @@ nav a, .drop-link {
 .dropdown-content {
     z-index: 10000;
 }
+
+/* === FIX DEFINITIVO SUBMENU GITHUB === */
+
+#main-nav,
+.nav-wrapper,
+nav,
+.dropdown {
+    overflow: visible !important;
+}
+
+.dropdown-content {
+    position: absolute;
+    z-index: 99999 !important;
+    pointer-events: auto;
+}
