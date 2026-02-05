@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM + Inbox Centralizado | Talkza</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        /* --- ESTILOS BASE --- */
+        :root {
+            --primary: #6366f1; --dark-blue: #0f172a; --dark-gray: #1e293b; --light: #f8fafc;
+            --accent: #22d3ee; --green-cta: #10b981; --border: rgba(255, 255, 255, 0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif !important; }
+        body { background-color: var(--dark-blue); color: var(--light); line-height: 1.6; overflow-x: hidden; }
+        .container { max-width: 1300px; margin: 0 auto; padding: 0 5%; width: 100%; }
+        .section-padding { padding: 100px 0; }
+        .text-center { text-align: center; }
+
+        /* APLICACIÓN DE ESTILOS EXACTOS SEGÚN IMAGEN DE INSPECCIÓN */
+        .gradient-text { 
+            background: linear-gradient(to right, #fff, #22d3ee); /* */
+            -webkit-background-clip: text; /* */
+            -webkit-text-fill-color: transparent; /* */
+        }
+
+        .inner-hero-clean {
+            padding: 220px 0 100px;
+            background-color: var(--dark-blue);
+            text-align: center;
+        }
+
+        .hero-title-large { 
+            font-size: clamp(2.2rem, 5vw, 3.5rem) !important; /* */
+            font-weight: 900; /* */
+            line-height: 1.2; /* */
+            margin-bottom: 20px; /* */
+        }
+
+        /* --- RESTO DE LA ESTRUCTURA --- */
+        .product-tag { 
+            background: var(--primary); 
+            padding: 6px 18px; 
+            border-radius: 50px; 
+            font-size: 0.75rem; 
+            font-weight: 800; 
+            margin-bottom: 25px; 
+            display: inline-block;
+            letter-spacing: 1px;
+        }
+
+        .hero-subtitle { 
+            font-size: 1.25rem; 
+            color: #cbd5e1; 
+            max-width: 800px; 
+            margin: 0 auto 40px; 
+        }
+
+        .flex-row-reverse { display: flex; flex-direction: row-reverse; align-items: center; gap: 60px; }
+        .title-main { font-size: 2.8rem; font-weight: 800; line-height: 1.2; margin-bottom: 25px; }
+
+        .solutions-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px; }
+        .sol-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); padding: 45px; border-radius: 24px; text-align: center; transition: 0.3s; }
+        .sol-card i { font-size: 3rem; color: var(--accent); margin-bottom: 20px; display: block; }
+        .sol-card h4 { font-size: 1.4rem; font-weight: 800; margin-bottom: 15px; }
+
+        .bg-gradient-benefits { background: linear-gradient(to right, #461a9d, #09522f); }
+        .btn-cta { 
+            background: linear-gradient(135deg, var(--primary), var(--accent)); 
+            padding: 18px 45px; 
+            border-radius: 50px; 
+            font-weight: 700; 
+            color: white; 
+            text-decoration: none; 
+            display: inline-block; 
+            font-size: 1.1rem; 
+        }
+
+        @media (max-width: 1024px) {
+            .flex-row-reverse { flex-direction: column; text-align: center; }
+            .solutions-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="inner-hero-clean">
+            <div class="container">
+                <span class="product-tag">PRODUCTO</span>
+                <h1 class="gradient-text hero-title-large">Inbox Centralizado & CRM</h1>
+                <p class="hero-subtitle">Gestioná todos tus canales de comunicación desde un mismo lugar. WhatsApp, Instagram y Messenger unidos para que tu equipo no pierda ninguna venta.</p>
+                <a href="#" class="btn-cta">Probar Gratis Ahora</a>
+            </div>
+        </section>
+
+        <section class="section-padding" style="border-top: 1px solid var(--border);">
+            <div class="container flex-row-reverse">
+                <div class="text-side">
+                    <h2 class="title-main">Respondé a todos tus clientes <span class="gradient-text">sin cambiar de pestaña</span></h2>
+                    <p style="color: #cbd5e1; font-size: 1.15rem; margin-bottom: 30px;">Con Talkza, tus agentes reciben los mensajes de todas las redes sociales en una sola bandeja de entrada. Esto elimina la confusión y reduce los tiempos de respuesta.</p>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 15px; font-weight: 600; display: flex; align-items: center; gap: 12px;">
+                            <i class="ri-checkbox-circle-fill" style="color: var(--green-cta); font-size: 1.5rem;"></i> Un solo número de WhatsApp para múltiples agentes.
+                        </li>
+                        <li style="margin-bottom: 15px; font-weight: 600; display: flex; align-items: center; gap: 12px;">
+                            <i class="ri-checkbox-circle-fill" style="color: var(--green-cta); font-size: 1.5rem;"></i> Historial unificado por cliente.
+                        </li>
+                    </ul>
+                </div>
+                <div class="visual-side">
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border); padding: 20px; border-radius: 20px;">
+                        <img src="https://cdn.shopify.com/s/files/1/0548/8305/7861/files/Diseno_sin_titulo_5.png?v=1769795591" alt="Inbox Talkza" style="width: 100%; border-radius: 10px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" style="background: var(--dark-gray);">
+            <div class="container text-center">
+                <h2 style="font-size: 2.5rem; font-weight: 900; text-transform: uppercase; margin-bottom: 15px;">Herramientas de CRM Potentes</h2>
+                <div class="solutions-grid">
+                    <div class="sol-card">
+                        <i class="ri-price-tag-3-line"></i>
+                        <h4>Etiquetas Personalizadas</h4>
+                        <p>Organizá tus contactos por estado (Venta, Soporte, VIP) para un acceso rápido.</p>
+                    </div>
+                    <div class="sol-card">
+                        <i class="ri-user-follow-line"></i>
+                        <h4>Asignación Automática</h4>
+                        <p>Derivá los chats a los agentes disponibles de forma equitativa o por departamentos.</p>
+                    </div>
+                    <div class="sol-card">
+                        <i class="ri-pie-chart-2-line"></i>
+                        <h4>Métricas en Vivo</h4>
+                        <p>Controlá el desempeño de tu equipo: tiempos de respuesta y chats resueltos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-gradient-benefits">
+            <div class="container text-center">
+                <h2 class="gradient-text" style="font-size: 3rem; font-weight: 900;">¿Listo para organizar tu comunicación?</h2>
+                <div style="margin-top: 45px;">
+                    <a href="#" class="btn-cta">Crear Cuenta Gratis</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+</body>
+</html>

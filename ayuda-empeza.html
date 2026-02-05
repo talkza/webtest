@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empezar con TalkZa | Centro de Ayuda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #6366f1;
+            --text-dark: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: #ffffff; color: var(--text-dark); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 5%; }
+
+        /* HEADER SUB-PÁGINA */
+        .help-header-sub { padding: 25px 0; border-bottom: 1px solid var(--border); background: #fff; }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; }
+        .header-flex img { height: 35px; }
+        
+        /* BUSCADOR PEQUEÑO */
+        .header-search { position: relative; width: 300px; }
+        .header-search input { width: 100%; padding: 10px 15px 10px 40px; border-radius: 8px; border: 1px solid var(--border); outline: none; }
+        .header-search i { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+
+        /* BREADCRUMBS (Inicio > Categoría) */
+        .breadcrumbs { padding: 30px 0; font-size: 0.9rem; color: var(--text-muted); }
+        .breadcrumbs a { text-decoration: none; color: var(--primary); font-weight: 600; }
+
+        /* TITULO CATEGORÍA */
+        .category-title { margin-bottom: 50px; }
+        .category-title h1 { font-size: 2rem; font-weight: 800; display: flex; align-items: center; gap: 15px; }
+        .category-title i { color: var(--primary); font-size: 2.5rem; }
+
+        /* SECCIONES Y ARTÍCULOS */
+        .sections-wrapper { display: grid; grid-template-columns: 1fr; gap: 40px; margin-bottom: 80px; }
+        .article-section h2 { font-size: 1.4rem; font-weight: 700; border-bottom: 2px solid var(--bg-light); padding-bottom: 10px; margin-bottom: 20px; color: var(--text-dark); }
+        
+        .article-list { list-style: none; }
+        .article-item { border-bottom: 1px solid var(--border); padding: 15px 0; display: flex; justify-content: space-between; align-items: center; }
+        .article-item a { text-decoration: none; color: var(--text-dark); font-weight: 500; transition: 0.2s; }
+        .article-item a:hover { color: var(--primary); padding-left: 5px; }
+        .article-item i { color: var(--text-muted); font-size: 1.2rem; }
+
+        .help-footer-sub { background: var(--bg-light); padding: 40px 0; text-align: center; border-top: 1px solid var(--border); }
+
+        @media (max-width: 768px) { .header-search { display: none; } }
+    </style>
+</head>
+<body>
+
+    <header class="help-header-sub">
+        <div class="container header-flex">
+            <a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0548/8305/7861/files/TALK_ZA_logo.png" alt="TalkZa"></a>
+            <div class="header-search">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="Buscar ayuda...">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <nav class="breadcrumbs">
+            <a href="centro-de-ayuda.html">Centro de Ayuda</a> <i class="ri-arrow-right-s-line"></i> Empezar con TalkZa
+        </nav>
+
+        <section class="category-title">
+            <h1><i class="ri-rocket-line"></i> Empezar con TalkZa</h1>
+        </section>
+
+        <div class="sections-wrapper">
+            
+            <div class="article-section">
+                <h2>Configuración Inicial</h2>
+                <ul class="article-list">
+                    <li class="article-item"><a href="#">Crear tu cuenta en TalkZa paso a paso</a> <i class="ri-arrow-right-s-line"></i></li>
+                    <li class="article-item"><a href="#">Cómo completar el perfil de tu empresa</a> <i class="ri-arrow-right-s-line"></i></li>
+                    <li class="article-item"><a href="#">Configuración de horarios de atención</a> <i class="ri-arrow-right-s-line"></i></li>
+                    <li class="article-item"><a href="#">Invitar a tu equipo de trabajo</a> <i class="ri-arrow-right-s-line"></i></li>
+                </ul>
+            </div>
+
+            <div class="article-section">
+                <h2>Instalación del Widget</h2>
+                <ul class="article-list">
+                    <li class="article-item"><a href="#">Cómo instalar el Widget en mi sitio web</a> <i class="ri-arrow-right-s-line"></i></li>
+                    <li class="article-item"><a href="#">Integración con WordPress y Shopify</a> <i class="ri-arrow-right-s-line"></i></li>
+                    <li class="article-item"><a href="#">Personalizar colores y textos del chat</a> <i class="ri-arrow-right-s-line"></i></li>
+                    <li class="article-item"><a href="#">Configurar la posición del botón de chat</a> <i class="ri-arrow-right-s-line"></i></li>
+                </ul>
+            </div>
+
+            <div class="article-section">
+                <h2>Conceptos Básicos</h2>
+                <ul class="article-list">
+                    <li class="article-item"><a href="#">Qué es la IA de TalkZa y cómo funciona</a> <i class="ri-arrow-right-s-line"></i></li>
+                    <li class="article-item"><a href="#">Diferencia entre Chatbot y CRM</a> <i class="ri-arrow-right-s-line"></i></li>
+                    <li class="article-item"><a href="#">Primeros pasos con la bandeja de entrada</a> <i class="ri-arrow-right-s-line"></i></li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="help-footer-sub">
+        <p>© 2026 TalkZa – Centro de Ayuda para Clientes</p>
+    </footer>
+
+</body>
+</html>

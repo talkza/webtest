@@ -1,0 +1,103 @@
+/* css/style.css */
+
+/* --- HEADER Y MENU GLOBAL --- */
+#main-nav { 
+    padding: 15px 0; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    background: rgba(15, 23, 42, 0.98); 
+    backdrop-filter: blur(10px); 
+    z-index: 1000; 
+    border-bottom: 1px solid rgba(255,255,255,0.1); 
+}
+
+.nav-wrapper { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1300px; 
+    margin: 0 auto; 
+    padding: 0 5%; 
+}
+
+.logo img { height: 55px; } 
+
+nav { display: flex; align-items: center; }
+
+nav a, .drop-link { 
+    color: #f8fafc; 
+    text-decoration: none; 
+    margin-left: 20px; 
+    font-size: 0.8rem; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    padding: 10px 0; /* Agregamos un poco de padding para ampliar el área táctil */
+}
+
+/* CONTENEDOR DEL DROPDOWN */
+.dropdown { 
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    height: 100%; 
+}
+
+/* CAJA DESPLEGABLE */
+.dropdown-content { 
+    display: none; 
+    position: absolute; 
+    background: #1e293b; 
+    min-width: 260px; 
+    border-radius: 12px; 
+    top: 100%; /* Se posiciona justo debajo del nav */
+    left: 0;
+    margin-top: 10px; /* El pequeño espacio visual */
+    border: 1px solid rgba(255,255,255,0.1); 
+    z-index: 2000; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    padding: 10px 0;
+}
+
+/* EL "PUENTE INVISIBLE": Esto evita que el menú se cierre al mover el mouse */
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    top: -15px; /* Cubre el margen de 10px más un poco más */
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+}
+
+/* MOSTRAR AL HACER HOVER */
+.dropdown:hover .dropdown-content { 
+    display: block; 
+}
+
+.dropdown-content a { 
+    display: block; 
+    color: white !important; 
+    padding: 12px 20px; 
+    text-transform: none !important; 
+    font-size: 0.9rem; 
+    border-bottom: 1px solid rgba(255,255,255,0.05); 
+    text-decoration: none; 
+    transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+    background: rgba(255,255,255,0.05);
+    color: #22d3ee !important;
+}
+
+.dropdown-content i { 
+    margin-right: 10px; 
+    color: #22d3ee; 
+}
+
+/* --- FOOTER GLOBAL --- */
+.main-footer { background: #fff; color: #1e293b; padding: 80px 0 40px; }
+.footer-bottom { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; max-width: 1300px; margin: 0 auto; padding: 0 5%; }
+.footer-logo-img { height: 45px; }

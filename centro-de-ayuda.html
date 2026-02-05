@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Ayuda | TalkZa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        /* --- ESTILOS CENTRO DE AYUDA (ESTÉTICA BLANCA Y LIMPIA) --- */
+        :root {
+            --primary-color: #6366f1;
+            --text-dark: #0f172a;
+            --text-light: #64748b;
+            --bg-gray: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Inter', sans-serif; 
+        }
+
+        body { 
+            background-color: #ffffff; 
+            color: var(--text-dark); 
+            line-height: 1.6;
+        }
+
+        .container { 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            padding: 0 5%; 
+        }
+
+        /* HEADER DEL CENTRO DE AYUDA */
+        .help-nav-bar { 
+            padding: 20px 0; 
+            border-bottom: 1px solid var(--border); 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .help-logo img { height: 40px; }
+
+        .back-to-site { 
+            text-decoration: none; 
+            color: var(--primary-color); 
+            font-weight: 700; 
+            font-size: 0.9rem; 
+            display: flex; 
+            align-items: center; 
+            gap: 5px;
+        }
+
+        /* HERO SECTOR (BUSCADOR) */
+        .help-hero { 
+            background-color: #0f172a; 
+            padding: 100px 0; 
+            text-align: center; 
+            color: #ffffff;
+        }
+
+        .help-hero h1 { 
+            font-size: 2.5rem; 
+            font-weight: 800; 
+            margin-bottom: 30px; 
+            letter-spacing: -1px;
+        }
+
+        .search-box { 
+            max-width: 650px; 
+            margin: 0 auto; 
+            position: relative; 
+        }
+
+        .search-box i { 
+            position: absolute; 
+            left: 25px; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            color: var(--text-light); 
+            font-size: 1.3rem; 
+        }
+
+        .search-box input { 
+            width: 100%; 
+            padding: 20px 20px 20px 65px; 
+            border-radius: 60px; 
+            border: none; 
+            font-size: 1.1rem; 
+            outline: none; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2); 
+        }
+
+        /* CUADRÍCULA DE CATEGORÍAS */
+        .categories-section { padding: 80px 0; }
+
+        .help-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 30px; 
+        }
+
+        .help-card { 
+            border: 1px solid var(--border); 
+            padding: 45px 30px; 
+            border-radius: 16px; 
+            text-align: center; 
+            text-decoration: none; 
+            color: inherit; 
+            transition: all 0.3s ease;
+        }
+
+        .help-card:hover { 
+            border-color: var(--primary-color); 
+            transform: translateY(-8px); 
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05); 
+        }
+
+        .help-card i { 
+            font-size: 2.8rem; 
+            color: var(--primary-color); 
+            margin-bottom: 20px; 
+            display: block; 
+        }
+
+        .help-card h3 { 
+            font-size: 1.25rem; 
+            font-weight: 700; 
+            margin-bottom: 12px; 
+        }
+
+        .help-card p { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+            line-height: 1.6; 
+        }
+
+        /* FOOTER SIMPLIFICADO */
+        .help-footer { 
+            background-color: var(--bg-gray); 
+            padding: 50px 0; 
+            text-align: center; 
+            border-top: 1px solid var(--border);
+        }
+
+        .help-footer p { 
+            color: var(--text-light); 
+            font-size: 0.9rem; 
+        }
+
+        @media (max-width: 900px) { 
+            .help-grid { grid-template-columns: 1fr 1fr; } 
+        }
+
+        @media (max-width: 600px) { 
+            .help-grid { grid-template-columns: 1fr; } 
+            .help-hero h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="container">
+        <div class="help-nav-bar">
+            <a href="index.html" class="help-logo">
+                <img src="https://cdn.shopify.com/s/files/1/0548/8305/7861/files/TALK_ZA_logo.png" alt="TalkZa">
+            </a>
+            <a href="index.html" class="back-to-site">
+                <i class="ri-arrow-left-line"></i> Ir al sitio principal
+            </a>
+        </div>
+    </header>
+
+    <section class="help-hero">
+        <div class="container">
+            <h1>Centro de Ayuda TalkZa</h1>
+            <div class="search-box">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="¿En qué podemos ayudarte hoy?">
+            </div>
+        </div>
+    </section>
+
+    <main class="container categories-section">
+        <div class="help-grid">
+            
+            <a href="#" class="help-card">
+                <i class="ri-rocket-line"></i>
+                <h3>Empezar con TalkZa</h3>
+                <p>Guía paso a paso para configurar tu cuenta y dar tus primeros pasos.</p>
+            </a>
+
+            <a href="#" class="help-card">
+                <i class="ri-whatsapp-line"></i>
+                <h3>WhatsApp Business</h3>
+                <p>Cómo conectar la API, crear plantillas y gestionar tus campañas de marketing.</p>
+            </a>
+
+            <a href="#" class="help-card">
+                <i class="ri-brain-line"></i>
+                <h3>Entrenar tu IA</h3>
+                <p>Aprende a subir documentos y configurar la personalidad de tu chatbot.</p>
+            </a>
+
+            <a href="#" class="help-card">
+                <i class="ri-chat-smile-3-line"></i>
+                <h3>Inbox y CRM</h3>
+                <p>Gestión de conversaciones, etiquetas y base de datos de clientes.</p>
+            </a>
+
+            <a href="#" class="help-card">
+                <i class="ri-bar-chart-2-line"></i>
+                <h3>Métricas y Reportes</h3>
+                <p>Cómo interpretar los datos de rendimiento en tiempo real de tu equipo.</p>
+            </a>
+
+            <a href="#" class="help-card">
+                <i class="ri-shield-user-line"></i>
+                <h3>Cuenta y Seguridad</h3>
+                <p>Administración de usuarios, facturación y seguridad de la información.</p>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="help-footer">
+        <div class="container">
+            <p>© 2026 TalkZa – Desarrollado por ZENBRO</p>
+        </div>
+    </footer>
+
+</body>
+</html>

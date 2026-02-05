@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog TalkZa | Notas y recursos</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        /* --- ESTILOS BASE Y RESET --- */
+        :root {
+            --primary: #6366f1; --dark-blue: #0f172a; --dark-gray: #1e293b; --light: #f8fafc;
+            --accent: #22d3ee; --green-cta: #10b981; --border: rgba(255, 255, 255, 0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif !important; }
+        body { background-color: var(--dark-blue); color: var(--light); line-height: 1.6; overflow-x: hidden; }
+        .container { max-width: 1300px; margin: 0 auto; padding: 0 5%; width: 100%; }
+        .section-padding { padding: 100px 0; }
+        .text-center { text-align: center; }
+
+        /* APLICACIÓN DE ESTILOS EXACTOS DE REPORTES */
+        .gradient-text { 
+            background: linear-gradient(to right, #fff, #22d3ee); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+
+        .inner-hero-clean {
+            padding: 220px 0 80px;
+            background-color: var(--dark-blue);
+            text-align: center;
+        }
+
+        .hero-title-large { 
+            font-size: clamp(2.2rem, 5vw, 3.5rem) !important; 
+            font-weight: 900; 
+            line-height: 1.2; 
+            margin-bottom: 20px; 
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle { font-size: 1.25rem; color: #cbd5e1; max-width: 700px; margin: 0 auto; }
+
+        /* GRID DEL BLOG */
+        .blog-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 30px; 
+            margin-top: 50px; 
+            padding-bottom: 100px; 
+        }
+        .blog-card { 
+            background: rgba(255, 255, 255, 0.03); 
+            border: 1px solid var(--border); 
+            border-radius: 20px; 
+            overflow: hidden; 
+            text-decoration: none; 
+            color: inherit; 
+            transition: 0.4s;
+        }
+        .blog-card:hover { transform: translateY(-10px); border-color: var(--primary); }
+        .card-img-wrapper { height: 220px; overflow: hidden; }
+        .card-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+        .card-content { padding: 25px; }
+        .card-content h3 { font-size: 1.3rem; margin-bottom: 15px; font-weight: 800; }
+        .read-more { color: var(--accent); font-weight: 700; font-size: 0.85rem; display: flex; align-items: center; gap: 5px; }
+
+        @media (max-width: 1024px) { .blog-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="inner-hero-clean">
+            <div class="container">
+                <h1 class="gradient-text hero-title-large">Notas y Recursos</h1>
+                <p class="hero-subtitle">Métricas, tendencias y guías para potenciar tu atención al cliente.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="blog-grid">
+                <a href="notas/administracion-de-turnos.html" class="blog-card">
+                    <div class="card-img-wrapper"><img src="https://cdn.shopify.com/s/files/1/0548/8305/7861/files/Gemini_Generated_Image_q4kzqvq4kzqvq4kz.png?v=1770231993" alt="Turnos"></div>
+                    <div class="card-content">
+                        <h3>Administración de turnos</h3>
+                        <span class="read-more">Leer nota <i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </a>
+                <a href="notas/asistente-online-de-ventas.html" class="blog-card">
+                    <div class="card-img-wrapper"><img src="https://cdn.shopify.com/s/files/1/0548/8305/7861/files/Gemini_Generated_Image_btweagbtweagbtwe.png?v=1770232313" alt="Ventas"></div>
+                    <div class="card-content">
+                        <h3>Asistente online de ventas</h3>
+                        <span class="read-more">Leer nota <i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </a>
+                <a href="notas/no-perder-ventas.html" class="blog-card">
+                    <div class="card-img-wrapper"><img src="https://cdn.shopify.com/s/files/1/0548/8305/7861/files/Gemini_Generated_Image_yurfmiyurfmiyurf.png?v=1770232314" alt="No perder ventas"></div>
+                    <div class="card-content">
+                        <h3>No perder ventas</h3>
+                        <span class="read-more">Leer nota <i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </a>
+                <a href="notas/atender-rapido-y-eficaz.html" class="blog-card">
+                    <div class="card-img-wrapper"><img src="https://cdn.shopify.com/s/files/1/0548/8305/7861/files/Gemini_Generated_Image_r5getvr5getvr5ge.png?v=1770232343" alt="Eficacia"></div>
+                    <div class="card-content">
+                        <h3>Atender rápido y con eficacia</h3>
+                        <span class="read-more">Leer nota <i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </a>
+                <a href="notas/whatsapp-marketing.html" class="blog-card">
+                    <div class="card-img-wrapper"><img src="https://cdn.shopify.com/s/files/1/0548/8305/7861/files/Gemini_Generated_Image_97mr5q97mr5q97mr.png?v=1770233357" alt="WhatsApp"></div>
+                    <div class="card-content">
+                        <h3>WhatsApp Marketing</h3>
+                        <span class="read-more">Leer nota <i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </a>
+                <a href="notas/promociones-productos-whatsapp.html" class="blog-card">
+                    <div class="card-img-wrapper"><img src="https://cdn.shopify.com/s/files/1/0548/8305/7861/files/Gemini_Generated_Image_p5qd4tp5qd4tp5qd.png?v=1770233358" alt="Promociones"></div>
+                    <div class="card-content">
+                        <h3>Promociones y productos</h3>
+                        <span class="read-more">Leer nota <i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+</body>
+</html>
